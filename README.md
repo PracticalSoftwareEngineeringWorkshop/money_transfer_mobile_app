@@ -17,6 +17,13 @@ Login page design concept taken from `https://www.youtube.com/watch?v=ExKYjqgswJ
 ### Repository
 `https://github.com/PracticalSoftwareEngineeringWorkshop/money_transfer_mobile_app`
 
+## Screenshots
+Login Screen  
+![Login Screen](screenshots/login_screen.png)  
+
+Register Screen  
+![Register Screen](screenshots/register_screen.png)  
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
