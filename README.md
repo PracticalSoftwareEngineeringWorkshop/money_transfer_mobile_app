@@ -11,6 +11,9 @@ Add the following code in `pubspec.yaml` under `dependencies`
 http: ^0.13.1
 ```
 
+## Links
+Login page design concept taken from `https://www.youtube.com/watch?v=ExKYjqgswJg`  
+
 ### Repository
 `https://github.com/PracticalSoftwareEngineeringWorkshop/money_transfer_mobile_app`
 
