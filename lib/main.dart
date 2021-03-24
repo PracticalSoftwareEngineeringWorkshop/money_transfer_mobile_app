@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:money_transfer_mobile_app/Screens/LoginScreen/login_screen.dart';
 import 'package:money_transfer_mobile_app/view_account.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Money Transfer',
       theme: ThemeData(
         primarySwatch: Colors.red,
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
   }
 
   Widget splashScreen = SplashScreenView(
-    home: ViewAccount(),
+    home: LoginScreen(),
     duration: 3000,
     imageSize: 100,
     imageSrc: "images/logo.png",
