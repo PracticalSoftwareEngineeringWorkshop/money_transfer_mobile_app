@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:money_transfer_mobile_app/view_account.dart';
+import 'package:splash_screen_view/SplashScreenView.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,20 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: ViewAccount(),
+      home: splashScreen,
     );
   }
+
+  Widget splashScreen = SplashScreenView(
+    home: ViewAccount(),
+    duration: 3000,
+    imageSize: 100,
+    imageSrc: "images/logo.png",
+    text: "Money Transfer",
+    textType: TextType.TyperAnimatedText,
+    textStyle: TextStyle(
+      fontSize: 30.0,
+    ),
+    backgroundColor: Colors.white,
+  );
 }

@@ -11,12 +11,12 @@ class ViewAccount extends StatefulWidget {
 
 class _ViewAccountState extends State<ViewAccount> {
 
-  final String VIEW_ACCOUNT_ENDPOINT = '/api/account/1';
+  static const String VIEW_ACCOUNT_ENDPOINT = '/api/account/1';
 
   var fullName;
 
   // asynchronous API call
-  void apiCall() async {
+  Future apiCall() async {
     var url =
         Uri.https(Constants.API_URL, VIEW_ACCOUNT_ENDPOINT);
     var response = await http.get(url);
