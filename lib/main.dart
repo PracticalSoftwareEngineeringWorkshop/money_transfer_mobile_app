@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:money_transfer_mobile_app/Screens/RegisterScreen/register_screen.dart';
+import 'package:money_transfer_mobile_app/utils/constants.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
 void main() {
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
     textType: TextType.TyperAnimatedText,
     textStyle: TextStyle(
       fontSize: 30.0,
+      color: Constants.kPrimaryColor
     ),
     backgroundColor: Colors.white,
   );
