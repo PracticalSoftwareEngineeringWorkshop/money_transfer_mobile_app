@@ -9,6 +9,9 @@ Add the following code in `pubspec.yaml` under `dependencies`
 ```
 # Added HTTP library to make API calls
 http: ^0.13.1
+
+# https://pub.dev/packages/splash_screen_view
+splash_screen_view: ^1.0.3
 ```
 
 ## Links
@@ -29,6 +32,27 @@ Register Screen
 
 Transfer Money Screen  
 ![Transfer Money Screen](screenshots/transfer_money_screen.png)  
+
+## Flutter - How to
+[Installation](https://flutter.dev/docs/get-started/install/macos)  
+[Tutorial - Code Lab](https://flutter.dev/docs/get-started/codelab)  
+
+### Stateless vs Stateful Widgets
+- Stateless widgets are immutable, meaning that their properties can’t change—all values are final.
+- Stateful widgets maintain state that might change during the lifetime of the widget.
+
+### Creating apps
+```
+flutter create money_transfer_mobile_app
+cd money_transfer_mobile_app
+flutter run
+```
+
+To enable null safety, type:  
+```
+  $ cd money_transfer_mobile_app
+  $ dart migrate --apply-changes
+```
 
 ## Getting Started
 
