@@ -25,7 +25,10 @@ Login Screen
 ![Login Screen](screenshots/login_screen.png)  
 
 Register Screen  
-![Register Screen](screenshots/register_screen.png)  
+![Register Screen](screenshots/register_screen.png)    
+
+Transfer Money Screen  
+![Transfer Money Screen](screenshots/transfer_money_screen.png)  
 
 ## Getting Started
 

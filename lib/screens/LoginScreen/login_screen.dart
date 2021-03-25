@@ -5,7 +5,8 @@ import 'package:money_transfer_mobile_app/components/rounded_button.dart';
 import 'package:money_transfer_mobile_app/components/rounded_input_field.dart';
 import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/forgot_password.dart';
 import 'package:money_transfer_mobile_app/Screens/RegisterScreen/register_screen.dart';
-import 'package:money_transfer_mobile_app/screens/ViewAccount/view_account_screen.dart';
+import 'package:money_transfer_mobile_app/screens/TransferMoney/transfer_money_screen.dart';
+import 'package:money_transfer_mobile_app/screens/ViewProfile/view_profile_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -36,7 +37,8 @@ class LoginScreen extends StatelessWidget {
             text: "Login",
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return ViewAccountScreen();
+                return TransferMoneyScreen();
+                //return ViewProfileScreen();
               }));
             },
           ),

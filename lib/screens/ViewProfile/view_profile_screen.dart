@@ -3,12 +3,12 @@ import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 import 'package:money_transfer_mobile_app/utils/constants.dart';
 
-class ViewAccountScreen extends StatefulWidget {
+class ViewProfileScreen extends StatefulWidget {
   @override
-  _ViewAccountScreenState createState() => _ViewAccountScreenState();
+  _ViewProfileScreenState createState() => _ViewProfileScreenState();
 }
 
-class _ViewAccountScreenState extends State<ViewAccountScreen> {
+class _ViewProfileScreenState extends State<ViewProfileScreen> {
 
   static const String VIEW_ACCOUNT_ENDPOINT = '/api/account/1';
 
