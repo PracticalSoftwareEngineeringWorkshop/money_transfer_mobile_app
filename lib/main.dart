@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:money_transfer_mobile_app/Screens/LoginScreen/login_screen.dart';
 import 'package:money_transfer_mobile_app/Screens/RegisterScreen/register_screen.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
@@ -17,12 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: RegisterScreen(),
+      home: splashScreen,
     );
   }
 
-  Widget splashScreen = SplashScreenView(
-    home: LoginScreen(),
+  final Widget splashScreen = SplashScreenView(
+    home: RegisterScreen(),
     duration: 3000,
     imageSize: 100,
     imageSrc: "images/logo.png",

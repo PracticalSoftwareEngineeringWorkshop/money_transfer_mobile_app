@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/already_have_account_check.dart';
-import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/rounded_input_text.dart';
-import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/rounded_password_field.dart';
+import 'package:money_transfer_mobile_app/components/already_have_account_check.dart';
+import 'package:money_transfer_mobile_app/components/rounded_password_field.dart';
 import 'package:money_transfer_mobile_app/Screens/LoginScreen/login_screen.dart';
 import 'package:money_transfer_mobile_app/components/rounded_button.dart';
+import 'package:money_transfer_mobile_app/components/rounded_input_field.dart';
 
 class RegisterScreen extends StatelessWidget {
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/text_field_container.dart';
-import 'package:money_transfer_mobile_app/constants.dart';
+import 'package:money_transfer_mobile_app/components/text_field_container.dart';
+import 'package:money_transfer_mobile_app/utils/constants.dart';
 
 class RoundedPasswordField extends StatelessWidget {
   final String hintText;

@@ -1,5 +1,5 @@
 name: money_transfer_mobile_app
-description: A new Flutter project.
+description: Money Transfer Hybrid Mobile App using Flutter SDK and Dart programming language.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.

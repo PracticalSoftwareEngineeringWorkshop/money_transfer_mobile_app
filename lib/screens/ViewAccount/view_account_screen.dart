@@ -1,15 +1,14 @@
-import 'dart:convert' as convert;
-
 import 'package:flutter/material.dart';
+import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
-import 'package:money_transfer_mobile_app/constants.dart';
+import 'package:money_transfer_mobile_app/utils/constants.dart';
 
-class ViewAccount extends StatefulWidget {
+class ViewAccountScreen extends StatefulWidget {
   @override
-  _ViewAccountState createState() => _ViewAccountState();
+  _ViewAccountScreenState createState() => _ViewAccountScreenState();
 }
 
-class _ViewAccountState extends State<ViewAccount> {
+class _ViewAccountScreenState extends State<ViewAccountScreen> {
 
   static const String VIEW_ACCOUNT_ENDPOINT = '/api/account/1';
 
@@ -18,7 +17,7 @@ class _ViewAccountState extends State<ViewAccount> {
   // asynchronous API call
   Future apiCall() async {
     var url =
-        Uri.https(Constants.API_URL, VIEW_ACCOUNT_ENDPOINT);
+    Uri.https(Constants.API_URL, VIEW_ACCOUNT_ENDPOINT);
     var response = await http.get(url);
     var jsonResponse = convert.jsonDecode(response.body);
 

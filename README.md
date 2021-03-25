@@ -18,6 +18,9 @@ Login page design concept taken from `https://www.youtube.com/watch?v=ExKYjqgswJ
 `https://github.com/PracticalSoftwareEngineeringWorkshop/money_transfer_mobile_app`
 
 ## Screenshots
+Splash Screen  
+![Splash Screen](screenshots/splash_screen.png)  
+
 Login Screen  
 ![Login Screen](screenshots/login_screen.png)  
 

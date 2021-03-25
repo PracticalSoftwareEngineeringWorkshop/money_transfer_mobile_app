@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/already_have_account_check.dart';
-import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/forgot_password.dart';
-import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/rounded_input_text.dart';
-import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/rounded_password_field.dart';
-import 'package:money_transfer_mobile_app/Screens/RegisterScreen/register_screen.dart';
+import 'package:money_transfer_mobile_app/components/already_have_account_check.dart';
+import 'package:money_transfer_mobile_app/components/rounded_password_field.dart';
 import 'package:money_transfer_mobile_app/components/rounded_button.dart';
-import 'package:money_transfer_mobile_app/view_account.dart';
+import 'package:money_transfer_mobile_app/components/rounded_input_field.dart';
+import 'package:money_transfer_mobile_app/Screens/LoginScreen/components/forgot_password.dart';
+import 'package:money_transfer_mobile_app/Screens/RegisterScreen/register_screen.dart';
+import 'package:money_transfer_mobile_app/screens/ViewAccount/view_account_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -36,7 +36,7 @@ class LoginScreen extends StatelessWidget {
             text: "Login",
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return ViewAccount();
+                return ViewAccountScreen();
               }));
             },
           ),

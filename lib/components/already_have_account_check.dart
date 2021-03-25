@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:money_transfer_mobile_app/constants.dart';
+import 'package:money_transfer_mobile_app/utils/constants.dart';
 
 class AlreadyHaveAccountCheck extends StatelessWidget {
   final bool isLoggedIn;

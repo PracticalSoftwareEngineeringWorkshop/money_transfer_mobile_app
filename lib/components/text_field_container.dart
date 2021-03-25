@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../constants.dart';
+import 'package:money_transfer_mobile_app/utils/constants.dart';
 
 class TextFieldContainer extends StatelessWidget {
   final Widget child;
