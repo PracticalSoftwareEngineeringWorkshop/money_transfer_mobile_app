@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:money_transfer_mobile_app/components/rounded_button.dart';
 import 'package:money_transfer_mobile_app/components/rounded_input_field.dart';
+import 'package:money_transfer_mobile_app/screens/RegisterScreen/register_screen.dart';
 
 class TransferMoneyScreen extends StatelessWidget {
   @override
@@ -41,7 +42,11 @@ class TransferMoneyScreen extends StatelessWidget {
               ),
               RoundedButton(
                 text: "Send Money",
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return RegisterScreen();
+                  }));
+                },
               ),
             ],
           ),

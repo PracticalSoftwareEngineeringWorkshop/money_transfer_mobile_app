@@ -4,6 +4,22 @@
 
 Money Transfer Hybrid Mobile App using Flutter SDK and Dart programming language
 
+## Creating and running a flutter app
+```
+flutter create money_transfer_mobile_app
+cd money_transfer_mobile_app
+flutter run
+
+# To run on all devices/emulators at once  
+flutter run -d all  
+```
+
+To enable null safety, type:  
+```
+  $ cd money_transfer_mobile_app
+  $ dart migrate --apply-changes
+```
+
 ## Tasks
 Add the following code in `pubspec.yaml` under `dependencies`
 ```
@@ -13,6 +29,14 @@ http: ^0.13.1
 # https://pub.dev/packages/splash_screen_view
 splash_screen_view: ^1.0.3
 ```
+
+### Stateless vs Stateful Widgets
+- Stateless widgets are immutable, meaning that their properties can’t change—all values are final.
+- Stateful widgets maintain state that might change during the lifetime of the widget.
+
+## Flutter - How to
+[Installation](https://flutter.dev/docs/get-started/install/macos)  
+[Tutorial - Code Lab](https://flutter.dev/docs/get-started/codelab) 
 
 ## Links
 Login page design concept taken from `https://www.youtube.com/watch?v=ExKYjqgswJg`  
@@ -24,35 +48,17 @@ Login page design concept taken from `https://www.youtube.com/watch?v=ExKYjqgswJ
 Splash Screen  
 ![Splash Screen](screenshots/splash_screen.png)  
 
-Login Screen  
-![Login Screen](screenshots/login_screen.png)  
+View Profile Screen  
+![View Profile Screen](screenshots/view_profile_screen.png)    
 
 Register Screen  
 ![Register Screen](screenshots/register_screen.png)    
 
+Login Screen  
+![Login Screen](screenshots/login_screen.png)  
+
 Transfer Money Screen  
-![Transfer Money Screen](screenshots/transfer_money_screen.png)  
-
-## Flutter - How to
-[Installation](https://flutter.dev/docs/get-started/install/macos)  
-[Tutorial - Code Lab](https://flutter.dev/docs/get-started/codelab)  
-
-### Stateless vs Stateful Widgets
-- Stateless widgets are immutable, meaning that their properties can’t change—all values are final.
-- Stateful widgets maintain state that might change during the lifetime of the widget.
-
-### Creating apps
-```
-flutter create money_transfer_mobile_app
-cd money_transfer_mobile_app
-flutter run
-```
-
-To enable null safety, type:  
-```
-  $ cd money_transfer_mobile_app
-  $ dart migrate --apply-changes
-```
+![Transfer Money Screen](screenshots/transfer_money_screen.png)   
 
 ## Getting Started
 

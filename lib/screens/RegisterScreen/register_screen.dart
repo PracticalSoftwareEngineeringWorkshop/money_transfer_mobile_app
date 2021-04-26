@@ -4,6 +4,7 @@ import 'package:money_transfer_mobile_app/components/rounded_password_field.dart
 import 'package:money_transfer_mobile_app/Screens/LoginScreen/login_screen.dart';
 import 'package:money_transfer_mobile_app/components/rounded_button.dart';
 import 'package:money_transfer_mobile_app/components/rounded_input_field.dart';
+import 'package:money_transfer_mobile_app/screens/ViewProfile/view_profile_screen.dart';
 
 class RegisterScreen extends StatelessWidget {
   @override
@@ -55,6 +56,14 @@ class RegisterScreen extends StatelessWidget {
           RoundedButton(
             text: "Register",
             onPressed: () {},
+          ),
+          RoundedButton(
+            text: "View Profile",
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return ViewProfileScreen();
+              }));
+            },
           ),
           SizedBox(
             height: size.height * 0.05,
