@@ -20,7 +20,7 @@ class RegisterScreen extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           SizedBox(
-            height: size.height * 0.05,
+            height: size.height * 0.02,
           ),
           RoundedInputField(
             hintText: "First name",
@@ -51,7 +51,7 @@ class RegisterScreen extends StatelessWidget {
             onChanged: (value) {},
           ),
           SizedBox(
-            height: size.height * 0.05,
+            height: size.height * 0.02,
           ),
           RoundedButton(
             text: "Register",
@@ -66,7 +66,7 @@ class RegisterScreen extends StatelessWidget {
             },
           ),
           SizedBox(
-            height: size.height * 0.05,
+            height: size.height * 0.02,
           ),
           AlreadyHaveAccountCheck(
             isLoggedIn: false,

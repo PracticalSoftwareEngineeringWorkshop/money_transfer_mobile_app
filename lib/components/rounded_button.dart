@@ -3,12 +3,12 @@ import 'package:money_transfer_mobile_app/utils/constants.dart';
 
 class RoundedButton extends StatelessWidget {
   final String text;
-  final Function onPressed;
+  final Function()? onPressed;  //https://stackoverflow.com/questions/64484113/the-argument-type-function-cant-be-assigned-to-the-parameter-type-void-funct
   final Color color, textColor;
 
   const RoundedButton(
-      {Key key,
-      this.text,
+      {Key? key,
+      required this.text,
       this.onPressed,
       this.color = Constants.kPrimaryColor,
       this.textColor = Colors.white})

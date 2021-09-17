@@ -6,7 +6,9 @@ class RoundedPasswordField extends StatelessWidget {
   final String hintText;
   final ValueChanged<String> onChanged;
   const RoundedPasswordField({
-    Key key, this.hintText, this.onChanged,
+    Key? key,
+    required this.hintText,
+    required this.onChanged,
   }) : super(key: key);
 
   @override

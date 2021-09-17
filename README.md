@@ -60,6 +60,38 @@ Login Screen
 Transfer Money Screen  
 ![Transfer Money Screen](screenshots/transfer_money_screen.png)   
 
+## Setting up Flutter on Mac M1
+### Flutter SDK
+1. Install Rosetta  
+`sudo softwareupdate --install-rosetta`    
+1. Download Flutter.zip file from [here](https://flutter.dev/docs/get-started/install/macos)  
+1. Update your PATH in .zshrc  
+1. Verify with  
+```
+which flutter  
+flutter --version  
+flutter doctor
+```  
+1. JAVA_HOME should be set to JDK 8   
+
+### Setup for Android
+1. Install Android Studio  
+1. Configure location of Android Studio  
+```
+flutter config --android-studio-dir "/Users/biniam.kefale/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/203.7678000/Android Studio.app"  
+flutter doctor --android-licenses  
+```  
+
+### Setup for iOS   
+```
+sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer  
+sudo xcodebuild -runFirstLaunch  
+sudo xcodebuild -license  
+sudo gem install cocoapods  
+```  
+Verify that everything works    
+`flutter doctor`  
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

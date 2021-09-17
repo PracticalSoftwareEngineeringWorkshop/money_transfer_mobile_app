@@ -3,7 +3,7 @@ import 'package:money_transfer_mobile_app/utils/constants.dart';
 
 class ForgotPassword extends StatelessWidget {
   const ForgotPassword({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

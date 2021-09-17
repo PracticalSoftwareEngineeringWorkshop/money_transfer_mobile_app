@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'dart:convert' as convert;
-import 'package:http/http.dart' as http;
+import 'package:money_transfer_mobile_app/api/get_account_by_id.dart';
+import 'package:money_transfer_mobile_app/domains/account.dart';
 import 'package:money_transfer_mobile_app/screens/RegisterScreen/register_screen.dart';
-import 'package:money_transfer_mobile_app/utils/constants.dart';
 import 'package:money_transfer_mobile_app/components/rounded_button.dart';
 
 class ViewProfileScreen extends StatefulWidget {
@@ -11,27 +10,34 @@ class ViewProfileScreen extends StatefulWidget {
 }
 
 class _ViewProfileScreenState extends State<ViewProfileScreen> {
-  static const String VIEW_ACCOUNT_ENDPOINT = '/api/account/1';
 
+  Account? accountById;
+
+  Future apiCall() async {
+    var response = await getAccountById(2);
+
+    setState(() {
+      accountById = response;
+    });
+  }
+
+  /*
   var id, fullName, phoneNumber, email, balance;
 
   // asynchronous API call
   Future apiCall() async {
-    var url = Uri.https(Constants.API_URL, VIEW_ACCOUNT_ENDPOINT);
-    var response = await http.get(url);
-    var jsonResponse = convert.jsonDecode(response.body);
+
+    final Account accountById = await getAccountById(1);
 
     setState(() {
-      id = jsonResponse['id'];
-      fullName = jsonResponse['firstName'] + " " + jsonResponse['lastName'];
-      phoneNumber = jsonResponse['phoneNumber'];
-      email = jsonResponse['email'];
-      balance = jsonResponse['balance'];
+      id = accountById.id;
+      fullName = '$accountById.firstName $accountById.lastName';
+      phoneNumber = accountById.phoneNumber;
+      email = accountById.email;
+      balance = accountById.balance;
     });
-
-    // logs the value on the console
-    print(jsonResponse);
   }
+  */
 
   @override
   void initState() {
@@ -46,7 +52,7 @@ class _ViewProfileScreenState extends State<ViewProfileScreen> {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      body: fullName == null
+      body: accountById == null
           ? Center(child: CircularProgressIndicator())
           : Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -59,35 +65,35 @@ class _ViewProfileScreenState extends State<ViewProfileScreen> {
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
-                      height: size.height * 0.05,
+                      height: size.height * 0.02,
                     ),
                     Text(
-                      'Full Name: $fullName',
+                      'Full Name: ${accountById?.firstName} ${accountById?.lastName}',
                       style: TextStyle(fontSize: 20),
                     ),
                     SizedBox(
-                      height: size.height * 0.05,
+                      height: size.height * 0.02,
                     ),
                     Text(
-                      'Phone Number: $phoneNumber',
+                      'Phone Number: ${accountById?.phoneNumber}',
                       style: TextStyle(fontSize: 20),
                     ),
                     SizedBox(
-                      height: size.height * 0.05,
+                      height: size.height * 0.02,
                     ),
                     Text(
-                      'Email: $email',
+                      'Email: ${accountById?.email}',
                       style: TextStyle(fontSize: 20),
                     ),
                     SizedBox(
-                      height: size.height * 0.05,
+                      height: size.height * 0.02,
                     ),
                     Text(
-                      'Balance: $balance',
+                      'Balance: ${accountById?.balance}',
                       style: TextStyle(fontSize: 20),
                     ),
                     SizedBox(
-                      height: size.height * 0.05,
+                      height: size.height * 0.02,
                     ),
                     RoundedButton(
                       text: "Back to Register",

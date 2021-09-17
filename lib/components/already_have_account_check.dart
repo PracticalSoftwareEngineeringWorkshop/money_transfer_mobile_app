@@ -3,12 +3,12 @@ import 'package:money_transfer_mobile_app/utils/constants.dart';
 
 class AlreadyHaveAccountCheck extends StatelessWidget {
   final bool isLoggedIn;
-  final Function onPressed;
+  final Function()? onPressed;  //https://stackoverflow.com/questions/64484113/the-argument-type-function-cant-be-assigned-to-the-parameter-type-void-funct
 
   const AlreadyHaveAccountCheck({
-    Key key,
+    Key? key,
     this.isLoggedIn = true,
-    this.onPressed,
+    required this.onPressed,
   }) : super(key: key);
 
   @override

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Money Transfer',
+      title: Constants.APP_NAME,
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
@@ -22,11 +22,11 @@ class MyApp extends StatelessWidget {
   }
 
   final Widget splashScreen = SplashScreenView(
-    home: RegisterScreen(),
+    navigateRoute: RegisterScreen(),
     duration: 3000,
     imageSize: 100,
-    imageSrc: "images/logo.png",
-    text: "Money Transfer",
+    imageSrc: Constants.ASSET_IMAGE_LOGO,
+    text: Constants.APP_NAME,
     textType: TextType.TyperAnimatedText,
     textStyle: TextStyle(
       fontSize: 30.0,
